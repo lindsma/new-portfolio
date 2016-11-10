@@ -1,0 +1,18 @@
+// ------ Bourbon CSS ------ //
+@import "partials/plugin-stylesheets/bourbon/bourbon";
+
+// ------ Font & Color Variables and Classes ------ //
+@import "partials/general-setup/variables";
+
+// ------ Reset CSS ------ //
+@import "partials/general-setup/reset";
+
+// ------ Site's Fonts, Variables & Plugins ------ //
+@import "partials/general-setup/mixins";
+
+// ------ Site's Styles------ //
+@import "partials/site-modules/header";
+@import "partials/site-modules/hero";
+@import "partials/site-modules/work";
+@import "partials/site-modules/main";
+@import "partials/site-modules/contact";

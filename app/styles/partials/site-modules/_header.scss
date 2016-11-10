@@ -1,0 +1,56 @@
+header {
+  display: flex;
+  flex-direction: row;
+
+  .header-container {
+    flex-grow: 10;
+
+    h1 {
+      font-size: 60px;
+      font-family: $montseratt;
+      height: 100px;
+      background: #fff;
+      line-height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      text-align: center;
+      margin: 20px;
+      color: #333;
+      border: 2px solid #dedede;
+
+      span {
+        color: $teal;
+      }
+    }
+  }
+}
+
+nav {
+  align-self: center;
+  flex-grow: 1;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    font-family: $montseratt;
+    font-size: 25px;
+
+    li {
+      margin-right: 40px;
+      padding-bottom: 10px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover {
+        color: $teal;
+      }
+
+      &.active {
+        color: $teal;
+        border-bottom: 5px solid #333;
+      }
+    }
+  }
+}
