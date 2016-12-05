@@ -4,7 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'new-portfolio',
     environment: environment,
-    rootURL: '/',
+    rootURL: '/new-portfolio/',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
@@ -43,7 +43,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.baseURL = '/project-name';
+    ENV.baseURL = '/new-portfolio';
     ENV.locationType = 'hash';
   }
 
