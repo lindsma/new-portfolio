@@ -1,0 +1,241 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body, html {
+  height: 100%; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+header {
+  background: #823352;
+  display: flex;
+  flex-direction: row;
+  height: 90px; }
+  header .header-container {
+    flex-grow: 10; }
+    header .header-container h1 {
+      font-size: 42px;
+      font-family: "Montserrat", sans-serif;
+      line-height: 90px;
+      margin-left: 40px;
+      text-align: left;
+      color: white; }
+
+nav {
+  align-self: center;
+  flex-grow: 1; }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px; }
+    nav ul li {
+      margin-right: 40px;
+      color: white;
+      padding-bottom: 10px; }
+      nav ul li:last-child {
+        margin-right: 0; }
+      nav ul li:hover {
+        color: #1eb59a; }
+      nav ul li.active {
+        color: #1eb59a;
+        border-bottom: 5px solid #333; }
+
+.work-header {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  display: flex;
+  height: 80px;
+  margin-top: 50px;
+  text-align: center; }
+  .work-header h1 {
+    font-family: "Raleway", sans-serif;
+    color: #93ADB5;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 80px;
+    letter-spacing: 0.2em; }
+  .work-header hr {
+    align-self: center;
+    width: 22%;
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+
+.work-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  transition: all 0.5s ease; }
+
+.work.codekarma {
+  background: url("/new-portfolio/assets/images/codekarma.png") no-repeat;
+  background-size: cover;
+  border-radius: 3px;
+  width: 615px;
+  margin-top: 40px;
+  position: relative;
+  height: 300px;
+  border: 6px solid #93ADB5; }
+  .work.codekarma .triangle {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 30px;
+    right: -23px;
+    border-style: solid;
+    border-width: 25px 0 25px 20px;
+    border-color: transparent transparent transparent #93adb5; }
+
+.work.hatchery {
+  background: url("/new-portfolio/assets/images/hatchery.png") no-repeat;
+  background-size: cover;
+  border-radius: 3px;
+  width: 615px;
+  margin-top: 40px;
+  position: relative;
+  height: 300px;
+  border: 6px solid #93ADB5; }
+  .work.hatchery .triangle {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 30px;
+    left: -23px;
+    border-style: solid;
+    border-width: 25px 20px 25px 0;
+    border-color: transparent #93adb5 transparent transparent; }
+
+body {
+  background: url("images/brickwall.png"); }
+
+.contact-container {
+  background: lightgrey; }
+  .contact-container h1 {
+    font-size: 60px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+    letter-spacing: 0.2em;
+    text-align: center;
+    padding-top: 30px; }
+  .contact-container hr {
+    margin-top: 25px;
+    width: 60%;
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+  .contact-container .contact {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    flex-wrap: wrap; }
+    .contact-container .contact .icons {
+      display: flex;
+      width: 100%;
+      justify-content: center; }
+    .contact-container .contact .icon-container {
+      background: #fff;
+      height: 150px;
+      width: 150px;
+      margin: 0 40px;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      transition: all .75s ease;
+      position: relative; }
+      .contact-container .contact .icon-container:hover {
+        border: 3px solid #1eb59a;
+        cursor: pointer;
+        height: 175px;
+        width: 175px; }
+      .contact-container .contact .icon-container a {
+        align-self: center; }
+      .contact-container .contact .icon-container img {
+        height: 60px;
+        align-self: center; }
+    .contact-container .contact form {
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+      font-family: "Raleway", sans-serif;
+      margin: 40px 0; }
+      .contact-container .contact form label {
+        margin-top: 20px; }
+      .contact-container .contact form input {
+        border: 0;
+        border-bottom: 1px solid #333;
+        background: lightgrey;
+        height: 40px;
+        font-size: 20px; }
+      .contact-container .contact form .submit {
+        width: 60px;
+        height: 40px;
+        margin-top: 20px;
+        align-self: flex-end;
+        border-radius: 5px;
+        border: none; }
+
+.about-container {
+  display: flex;
+  margin-top: 30px; }
+  .about-container hr {
+    width: 25%;
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+    align-self: center; }
+  .about-container h1 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+    letter-spacing: .2em; }
+
+/*# sourceMappingURL=new-portfolio.css.map */

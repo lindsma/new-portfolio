@@ -1,0 +1,1 @@
+/Users/lindseyadams/Documents/Assignments/new-portfolio/tmp/broccoli_merge_trees-input_base_path-VlUwZT4z.tmp/1/new-portfolio/resolver.js
