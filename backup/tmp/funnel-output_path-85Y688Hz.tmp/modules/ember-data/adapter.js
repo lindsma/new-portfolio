@@ -1,1 +1,0 @@
-/Users/lindseyadams/Documents/Assignments/new-portfolio/node_modules/ember-data/addon/adapter.js

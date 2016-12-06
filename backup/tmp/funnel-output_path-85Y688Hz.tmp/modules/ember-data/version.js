@@ -1,1 +1,0 @@
-/Users/lindseyadams/Documents/Assignments/new-portfolio/tmp/creator-output_path-1cLnaq8D.tmp/version.js
