@@ -1,26 +1,19 @@
 header {
+  background: #823352;
   display: flex;
   flex-direction: row;
+  height: 90px;
 
   .header-container {
     flex-grow: 10;
 
     h1 {
-      font-size: 60px;
+      font-size: 42px;
       font-family: $montseratt;
-      height: 100px;
-      background: #fff;
-      line-height: 100px;
-      width: 100px;
-      border-radius: 50%;
-      text-align: center;
-      margin: 20px;
-      color: #333;
-      border: 2px solid #dedede;
-
-      span {
-        color: $teal;
-      }
+      line-height: 90px;
+      margin-left: 40px;
+      text-align: left;
+      color: white;
     }
   }
 }
@@ -37,6 +30,7 @@ nav {
 
     li {
       margin-right: 40px;
+      color: white;
       padding-bottom: 10px;
 
       &:last-child {

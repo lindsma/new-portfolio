@@ -21,14 +21,20 @@
 
   .contact {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin-top: 40px;
     flex-wrap: wrap;
 
+    .icons {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+    }
     .icon-container {
       background: #fff;
       height: 150px;
       width: 150px;
+      margin: 0 40px;
       border-radius: 5px;
       display: flex;
       justify-content: center;
@@ -40,10 +46,6 @@
         cursor: pointer;
         height: 175px;
         width: 175px;
-
-        .phone-num {
-          display: block;
-        }
       }
 
       a {
@@ -53,15 +55,6 @@
       img {
         height: 60px;
         align-self: center;
-      }
-
-      p.phone-num {
-        font-family: $raleway;
-        position: absolute;
-        display: none;
-        bottom: 10px;
-        color: #333;
-        letter-spacing: .2em;
       }
     }
 
